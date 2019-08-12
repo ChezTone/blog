@@ -1,0 +1,5 @@
+baseURL = "http://cheztone.com/"
+languageCode = "fr-fr"
+title = "Tone's blog"
+enableEmoji = true
+assetDir = "node_modules"

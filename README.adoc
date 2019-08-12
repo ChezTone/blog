@@ -1,0 +1,8 @@
+= Blog
+
+Hello, this is my blog site
+
+== Usage
+
+run `hugo server` to start this blog locally
+
