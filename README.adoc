@@ -1,6 +1,7 @@
 = Blog
 
-Hello, this is my blog site
+Hello, this is my french blog site. I hope it could helps to create more blog using Google AppEngine (This solution allows to host the blog reducing monthly cost)
+
 
 == Usage
 
