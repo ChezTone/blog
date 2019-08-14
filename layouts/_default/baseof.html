@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ block "title" . }}
-        <!-- Blocks may include default content. -->
         {{ .Site.Title }}
         {{ end }}</title>
     {{ $style := resources.Get "foundation-sites/dist/css/foundation.min.css" }}
@@ -30,15 +29,9 @@
         <h1>Tone's Blog</h1>
     </div>
 </div>
-
-
-
-<!-- Code that all your templates share, like a header -->
 {{ block "main" . }}
-<!-- The part of the page that begins to differ between templates -->
 {{ end }}
 {{ block "footer" . }}
-<!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
 {{ end }}
     {{ $jquery := resources.Get "jquery/dist/jquery.min.js" }}
     <script src="{{ $jquery.Permalink }}"></script>
