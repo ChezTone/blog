@@ -1,0 +1,6 @@
+@import 'vendors/foundation-sites/scss/foundation.scss';
+@include foundation-everything;
+
+img[alt=Bisounours]{
+  width: 15em;
+}

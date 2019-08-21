@@ -6,7 +6,8 @@
     <title>{{ block "title" . }}
         {{ .Site.Title }}
         {{ end }}</title>
-    {{ $style := resources.Get "foundation-sites/dist/css/foundation.min.css" }}
+    {{ $sass := resources.Get "main.scss" }}
+    {{ $style := $sass | resources.ToCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     <meta class="foundation-mq">
 </head>
@@ -33,9 +34,9 @@
 {{ end }}
 {{ block "footer" . }}
 {{ end }}
-    {{ $jquery := resources.Get "jquery/dist/jquery.min.js" }}
+    {{ $jquery := resources.Get "vendors/jquery/dist/jquery.min.js" }}
     <script src="{{ $jquery.Permalink }}"></script>
-    {{ $foundation := resources.Get "foundation-sites/dist/js/foundation.min.js" }}
+    {{ $foundation := resources.Get "vendors/foundation-sites/dist/js/foundation.min.js" }}
     <script src="{{ $foundation.Permalink }}"></script>
     <script>
         $(document).foundation();

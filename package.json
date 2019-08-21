@@ -4,7 +4,8 @@
   "description": "Tone's blog",
   "main": "content/posts/index.md",
   "scripts": {
-    "test": "echo \"not implemented yet\""
+    "test": "echo \"not implemented yet\"",
+    "deps": "rm -rf assets/vendors/* && cp -r node_modules/** assets/vendors"
   },
   "repository": {
     "type": "git",
