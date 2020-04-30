@@ -23,6 +23,6 @@
   "homepage": "https://github.com/ChezTone/blog#readme",
   "dependencies": {
     "foundation-sites": "^6.5.3",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
